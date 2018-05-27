@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GifTastic</title>
+
+    <style>
+figure.gif {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+}
+img {
+    width: 140px;
+    height: 140px;
+    background-color: grey;
+}
+.caption {
+    display: block;
+}
+h1, h2{
+    text-align: center;
+}
+    </style>
+
+</head>
+<body>
+        <div class="container">
+                <h1>GifTasctic</h1>
+   
+                <!-- Area de botones  -->
+                <div id="buttons-view"></div>
+                <br>
+            
+                <form id="gif-form">
+                        <label for="gif-quantity">How Many Gif (max. 25)</label>
+                        <select id="gif-quantity">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10" selected>10</option>
+                            </select>
+                        <br>
+                  <label for="gif-input">Gif to add</label>
+                  <input type="text" id="gif-input">
+                  <br>
+
+                  <!-- Boton de agregar boton -->
+                  <input id="add-gif" type="submit" value="Add a Gif Option">
+                </form>
+
+                <div id="gifArea">
+
+                </div>
+
+    
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="./gif.js"></script>
+</body>
+</html>
